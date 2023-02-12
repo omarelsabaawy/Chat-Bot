@@ -1,0 +1,282 @@
+{
+     "intents": [
+           {
+                 "tag": "Greeting",
+                 "patterns": [
+                       "Hi",
+                       "Hi there",
+                       "Hola",
+                       "Hello",
+                       "Hello there",
+                       "Hya",
+                       "Hya there"
+                 ],
+                 "responses": [
+                       "Hello, how are you doing?",
+                       "Hi, how are you doing?",
+                       "Greeting, how are you doing?"
+                 ],
+                 "extension":  {
+                       "function": "",
+                       "entities": false,
+                       "responses": []
+                 },
+                 "context":  {
+                       "in": "",
+                       "out": "GreetingUserRequest",
+                       "clear": false
+                 },
+                 "entityType": "NA",
+                 "entities": []
+           },
+           {
+                 "tag": "CourtesyGreeting",
+                 "patterns": [
+                       "How are you?",
+                       "how are you?",
+                       "how are you?",
+                       "how are you?",
+                       "How are you doing?",
+                       "Hope you are doing well?",
+                       "hope you are doing well?"
+                 ],
+                 "responses": [
+                       "I am great, how are you?",
+                       "how are you? I am great thanks!",
+                       "I am good thank you, how are you?",
+                       "I am great Thanks, how are you?",
+                       "I am good thank you, how are you?",
+                       "good thank you, how are you?"
+                 ],
+                 "extension":  {
+                       "function": "",
+                       "entities": false,
+                       "responses": []
+                 },
+                 "context":  {
+                       "in": "",
+                       "out": "CourtesyGreetingUserRequest",
+                       "clear": true
+                 },
+                 "entityType": "NA",
+                 "entities": []
+           },
+           {
+                 "tag": "CourtesyGreetingResponse",
+                 "patterns": [
+                       "i am good thanks",
+                       "I am good",
+                       "Well",
+                       "i am great",
+                       "I am doing good",
+                       "Fine thanks",
+                       "Awesome",
+                       "Good thanks!",
+                       "Good",
+                       "fine",
+                       "great",
+                       "Better",
+                       "Not bad",
+                       "much better",
+                       "Wonderful",
+                       "Fantastic"
+                 ],
+                 "responses": [
+                       "Happy To Hear that, How can i help you? :)"
+                 ],
+                 "context":  {
+                       "in": "GreetingUserRequest",
+                       "out": "",
+                       "clear": true
+                 },
+                 "entityType": "NA"
+           },
+           {
+              "tag": "CourtesyGreetingResponseNegative",
+                 "patterns": [
+                       "Not good",
+                       "So-so",
+                       "Not bad",
+                       " I've been worse",
+                       "Not well",
+                       "I've been better",
+                       "not very well",
+                       "Not so well",
+                       "Terrible",
+                       "Awful",
+                       "really bad",
+                       "bad"
+                 ],
+                 "responses": [
+                       "I am sorry for you, I hope you feel better when you use swap.it! :)"
+                 ]
+           },
+           {
+                 "tag": "Thanks",
+                 "patterns": [
+                       "OK thank you",
+                       "OK thanks",
+                       "OK",
+                       "Thanks",
+                       "Thank you",
+                       "That's helpful"
+                 ],
+                 "responses": [
+                       "No problem!",
+                       "Happy to help!",
+                       "Any time!",
+                       "My pleasure"
+                 ],
+                 "extension":  {
+                       "function": "",
+                       "entities": false,
+                       "responses": []
+                 },
+                 "context":  {
+                       "in": "",
+                       "out": "",
+                       "clear": false
+                 },
+                 "entityType": "NA",
+                 "entities": []
+           },
+           {
+                 "tag": "GoodBye",
+                 "patterns": [
+                       "Bye",
+                       "Adios",
+                       "See you later",
+                       "Goodbye"
+                 ],
+                 "responses": [
+                       "See you later",
+                       "Have a nice day",
+                       "Bye! Come back again soon."
+                 ],
+                 "extension":  {
+                       "function": "",
+                       "entities": false,
+                       "responses": []
+                 },
+                 "context":  {
+                       "in": "",
+                       "out": "",
+                       "clear": false
+                 },
+                 "entityType": "NA",
+                 "entities": []
+           },
+           {
+                 "tag": "CourtesyGoodBye",
+                 "patterns": [
+                       "Thanks, bye",
+                       "Thanks for the help, goodbye",
+                       "Thank you, bye",
+                       "Thank you, goodbye",
+                       "Thanks goodbye",
+                       "Thanks good bye"
+                 ],
+                 "responses": [
+                       "No problem, goodbye",
+                       "Not a problem! Have a nice day",
+                       "Bye! Come back again soon."
+                 ],
+                 "extension":  {
+                       "function": "",
+                       "entities": false,
+                       "responses": []
+                 },
+                 "context":  {
+                       "in": "",
+                       "out": "",
+                       "clear": false
+                 },
+                 "entityType": "NA",
+                 "entities": []
+           },
+           {"tag": "swapha",
+                 "patterns": [
+                       "What is swapha?",
+                       "what is swap.it?",
+                       "what is swap it?",
+                       "what?",
+                       "why swapha?",
+                       "why?",
+                       "why to use it?",
+                       "swap.it?",
+                       "swap it?",
+                       "swapha?",
+                       "what is it used for?"
+                 ],
+                 "responses": [
+                       "Swap.it is an online platform, where you can swap items you don't need with ones you need, with people in your neighborhood."
+                 ]
+           },
+           {"tag": "SwaphaHelp",
+                 "patterns": [
+                       "how",
+                       "how to",
+                       "how to use",
+                       "how to use it",
+                       "how to use swap.it",
+                       "how to use swapha",
+                       "i need help",
+                       "help",
+                       "any one can help me here",
+                       "can you help me",
+                       "please help",
+                       "?",
+                       " "
+                 ],
+                 "responses": [
+                       "By filling your lists swap and wishlist, swap.it will choose for you the best people you can swap your items with."
+                 ]
+           },
+           {"tag": "SwaphaWishList",
+                 "patterns": [
+                       "how to fill wish list",
+                       "how to fill wishlist",
+                       "how to fill wish list",
+                       "how to add in wish list",
+                       "how to add my products i wish to own",
+                       "how to add products i want",
+                       "where can i add my wishing items",
+                       "wishing items"
+                 ],
+                 "responses": [
+                       "From the top right corner, you will find the heart button where it is the wish list, you can then add your products from after searching for them."
+                 ]
+           },
+           {"tag": "SwaphaSwapList",
+                 "patterns": [
+                       "how to fill Swap list",
+                       "how to fill Swaplist",
+                       "how to fill swap list",
+                       "how to add in swap list",
+                       "how to add my products i wanna swap",
+                       "how to add products i want to swap",
+                       "where can i swap my products",
+                       "swapping items",
+                       "how can i fill the list",
+                       "how to fill them",
+                       "how to fill it"
+                 ],
+                 "responses": [
+                       "From the top right corner, you will find the swap button where it is your swap list, you can then add your products from after searching for them, or even uploading users."
+                 ]
+           },
+           {"tag": "whereLists",
+                 "patterns": [
+                       "where is my swapList",
+                       "where is my wishList",
+                       "where is my Lists",
+                       "where can i add my swap items",
+                       "where is my swap list",
+                       "where is my wish list"
+                 ],
+                 "responses": [
+                       "You will find the list in the up right corner, where the heart is your wishing list, and the swap is the swapping list. :)"
+                 ]
+           }
+     ]
+}
